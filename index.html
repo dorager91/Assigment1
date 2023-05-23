@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CS455 Assignment 1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<!--NAV BAR -->
+<ul id="nav_bar">
+    <li><a id="nav_home" class="active" onclick="handleHomeClick()">Home</a></li>
+    <li><a id="nav_about" onclick="handleAboutClick()">About</a></li>
+</ul>
+
+<div id="home">
+<form id="item_form">
+    <div class="form-input">
+        <label for="itemname">Item Name:</label><br>
+        <input type="text" id="itemname" name="itemname"><br>
+    </div>
+    <div class="form-input">
+        <label for="description">Description:</label><br>
+        <input type="text" id="description" name="description">
+    </div>
+    <div class="form-input">
+        <label for="price">Price:</label><br>
+        <input type="number" id="price" name="price">
+    </div>
+    <div class="form-input">
+        <label for="imageurl">Image URL:</label><br>
+        <input type="text" id="imageurl" name="imageurl">
+    </div>
+    <button type="button" id="addItem">Add Item</button>
+    <button type="button" id="clearForm">Clear Form</button>
+</form>
+
+<div id="itemList">
+</div>
+
+<button type="button" id="deleteAll">Delete All Cards</button>
+</div>
+<div id="about" class="content hidden">
+    <!-- About page content will go here -->
+    <h3>A Little About Me</h3>
+    <p> Hello! My name is Dorothy and I'm from Taiwan. This is my first time taking a CPSC 400 level course.
+        I am on a co-op term right now and I am glad to have gotten off the waitlist and gotten into course.
+        I'm a third year student, and I have been learning to use Linux terminal commands, git (Bitbucket), Kubernetes,
+        Docker, Gradle, Groovy and Go on my co-op term in addition to the standard skill set from the required cs
+        prerequisite courses (Java, Python, C, C++, etc.).</p>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>

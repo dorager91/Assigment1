@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Default Item",
+    "description": "This is a default item.",
+    "price": 10,
+    "imageUrl": "https://example.com/default-image.jpg"
+  },
+  {
+    "name": "Default Item 2",
+    "description": "This is default item 2.",
+    "price": 19.99,
+    "imageUrl": "https://example.com/default-image.jpg"
+  }
+]

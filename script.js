@@ -1,24 +1,17 @@
 loadItem();
 
 function handleHomeClick() {
-    // Handle the click on the "Home" nav item
     console.log('Home clicked');
-    // Remove active class from all nav items
     document.querySelectorAll('#nav_bar a').forEach(item => item.classList.remove('active'));
-    // Add active class to Home nav item
     document.querySelector('#nav_home').classList.add('active');
-    // You could add code here to switch to the home tab or perform other actions as needed
     document.querySelector('#home').classList.remove("hidden");
     document.querySelector('#about').classList.add("hidden");
 }
 
 function handleAboutClick() {
     console.log('About clicked');
-    // Remove active class from all nav items
     document.querySelectorAll('#nav_bar a').forEach(item => item.classList.remove('active'));
-    // Add active class to Workshops nav item
     document.querySelector('#nav_about').classList.add('active');
-    // You could add code here to switch to the workshops tab or perform other actions as needed
     document.querySelector('#about').classList.remove("hidden");
     document.querySelector('#home').classList.add("hidden");
 }
